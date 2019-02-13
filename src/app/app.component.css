@@ -1,0 +1,10 @@
+ul {
+    text-align: center;
+  }
+  li{
+      margin-right: 50px;
+  }
+  router-outlet
+  {
+    margin-top: 100px;
+  }
