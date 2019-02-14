@@ -4,14 +4,12 @@ import {RouterModule} from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { VideosComponent } from './videos/videos.component';
 import { AlbumsModule } from './albums/albums.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    VideosComponent
   ],
   imports: [
     BrowserModule,
