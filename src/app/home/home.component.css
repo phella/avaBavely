@@ -7,8 +7,17 @@ p
 {
     margin-top: 100px;
 }
-.anba
+img
 {
     max-width:100%;
     max-height:100%;
+}
+.home
+{
+    border-style: solid;
+}
+.carousel , .carousel-inner
+{
+    height: 500px;
+    margin-top:70px;
 }
