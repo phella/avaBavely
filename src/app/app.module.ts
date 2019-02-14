@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { VideosComponent } from './videos/videos.component';
+import { AlbumsModule } from './albums/albums.module';
 
 @NgModule({
   declarations: [
@@ -17,8 +18,9 @@ import { VideosComponent } from './videos/videos.component';
     AppRoutingModule,
     RouterModule.forRoot([
       {path: 'home', component: HomeComponent},
-      {path: '', redirectTo: 'home', pathMatch: 'full'}
-    ])
+      {path: '', redirectTo: 'home', pathMatch: 'full'},
+    ]),
+    AlbumsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
