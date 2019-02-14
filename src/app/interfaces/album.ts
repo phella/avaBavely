@@ -1,4 +1,5 @@
 export interface Ialbum {
     youtubeLink: string;
-    image: File;
+    imagePath: string;
+    description: string;
 }

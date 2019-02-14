@@ -8,7 +8,7 @@ import { AlbumsComponent } from './albums.component';
   imports: [
     CommonModule,
     RouterModule.forChild([
-      {path: 'albums', component: AlbumsComponent}
+      {path: 'albums', component: AlbumsComponent},
     ])
   ]
 })
