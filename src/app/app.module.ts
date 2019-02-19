@@ -8,7 +8,7 @@ import { AlbumsModule } from './albums/albums.module';
 import { ShowsComponent } from './shows/shows.component';
 import { ContactComponent } from './contact/contact.component';
 import { AlbumsComponent } from './albums/albums.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,9 +24,10 @@ import { AlbumsComponent } from './albums/albums.component';
       {path: '', redirectTo: 'home', pathMatch: 'full'},
       {path: 'shows', component: ShowsComponent},
       {path: 'contact', component: ContactComponent},
-      {path: 'albums', component: AlbumsComponent}
+      {path: 'albums', component: AlbumsComponent},
     ]),
-    AlbumsModule
+    AlbumsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
