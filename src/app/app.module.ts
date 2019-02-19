@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { AlbumsModule } from './albums/albums.module';
 import { ShowsComponent } from './shows/shows.component';
 import { ContactComponent } from './contact/contact.component';
+import { AlbumsComponent } from './albums/albums.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,9 @@ import { ContactComponent } from './contact/contact.component';
     RouterModule.forRoot([
       {path: 'home', component: HomeComponent},
       {path: '', redirectTo: 'home', pathMatch: 'full'},
+      {path: 'shows', component: ShowsComponent},
+      {path: 'contact', component: ContactComponent},
+      {path: 'albums', component: AlbumsComponent}
     ]),
     AlbumsModule
   ],
