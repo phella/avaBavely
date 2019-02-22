@@ -2,7 +2,7 @@
   <iframe *ngIf="selectedAlbum" class="col-lg-12" height="450" [src]='selectedAlbum.youtubeLink' frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 <div class="container">
-  <div class="card" style="width: 18rem;" *ngFor="let album of albums">
+  <div class="card col-lg-4"  *ngFor="let album of albums">
     <img class="card-img-top" [src]='album.image' alt="Card image cap">
     <div class="card-body">
       <p class="card-text">{{album.description}}</p>
