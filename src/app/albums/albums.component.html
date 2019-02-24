@@ -3,7 +3,7 @@
 </div>
 <div class="container">
   <div class="card col-lg-4"  *ngFor="let album of albums">
-    <img class="card-img-top" [src]='album.image' alt="Card image cap">
+    <img class="card-img-top" [src]='album.imagePath' alt="Card image cap">
     <div class="card-body">
       <p class="card-text">{{album.description}}</p>
     </div>

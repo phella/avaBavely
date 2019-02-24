@@ -10,10 +10,14 @@ import { ApiService } from '../api.service';
 export class AlbumsComponent implements OnInit {
   albums: Ialbum[];
   selectedAlbum: Ialbum ;
+  base = 'http://localhost:8080/avaBavely/assets/';
   constructor(private connection: ApiService) { }
   ngOnInit() {
     this.connection.getAlbums().subscribe(
-      albums => { this.albums = albums ; }
+      albums => { this.albums = albums ;
+      for (const album of albums) {
+        album.imagePath = this.base + album.imagePath ;
+      }}
     );
   }
 
