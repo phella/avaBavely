@@ -19,6 +19,9 @@ export class AlbumsComponent implements OnInit {
         album.imagePath = this.base + album.imagePath ;
       }}
     );
+    this.connection.getSelctedAlbum().subscribe(
+      album => { this.selectedAlbum = album; }
+    );
   }
 
 }

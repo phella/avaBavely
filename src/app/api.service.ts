@@ -11,4 +11,7 @@ export class ApiService {
   getAlbums(): Observable<Ialbum[]> {
     return this.http.get<Ialbum[]>(this.base + 'getAlbums');
   }
+  getSelctedAlbum(): Observable<Ialbum> {
+    return this.http.get<Ialbum>(this.base + 'getSelectedAlbums');
+  }
 }
